@@ -19,6 +19,7 @@ Deploying the Kubernetes cluster in Private and expose the POD via SSL enabled A
 1) In ingress.annotation :-
     a) Add the ARN of SSL certificate // to map the certificate with ALB for said registered domain
     b) Redirect the traffic from 80 to 443
+    c) Create CNAME record of ALB in Route53
 2) Define the path for respective application in the "ingress" service
 3) Basis this path loadbalancer will be updated with lister rules
 4) Use the default backend concept as default path for unmatch routing
